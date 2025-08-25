@@ -1,0 +1,129 @@
+.listproduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 740px;
+  padding: 10px 50px;
+  margin: 30px;
+  border-radius: 6px;
+  background: #f8f9fa; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for better depth */
+}
+
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  padding: 20px 0px;
+  color: #333333; /* Darker text color */
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #e9ecef; /* Light gray background */
+  border-radius: 4px;
+}
+
+.listproduct-format {
+  width: 100%;
+  align-items: center;
+  font-weight: 500;
+  background-color: #fff; /* White background for individual product */
+  padding: 10px;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.listproduct-format:hover {
+  transform: translateY(-5px); /* Slight hover animation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.listproduct-product-icon {
+  height: 80px;
+  object-fit: cover; /* Ensure the images are cropped proportionally */
+  border-radius: 6px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.listproduct-product-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.listproduct-remove-icon {
+  cursor: pointer;
+  margin: auto;
+  height: 20px;
+  width: 20px;
+  transition: all 0.3s ease;
+}
+
+.listproduct-remove-icon:hover {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(64%) saturate(473%) hue-rotate(147deg) brightness(93%) contrast(88%);
+}
+
+.listproduct-allproducts {
+  width: 100%;
+  max-height: 500px; /* Set max height for scrollable area */
+  overflow-y: auto; /* Only vertical scrolling */
+  padding-right: 8px; /* Small padding for scrollbar space */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Custom scrollbar styles */
+.listproduct-allproducts::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.listproduct-allproducts::-webkit-scrollbar-thumb {
+  background-color: #6c757d; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for thumb */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.listproduct-allproducts::-webkit-scrollbar-thumb:hover {
+  background-color: #495057; /* Darker thumb color on hover */
+}
+
+.listproduct-allproducts::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Track color */
+  border-radius: 10px;
+}
+
+/* For Firefox */
+.listproduct-allproducts {
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d #f1f1f1; /* Thumb color and track color */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 800px) {
+  .listproduct {
+    box-sizing: border-box;
+    width: 95%;
+    height: 100%;
+    padding: 10px 30px;
+    margin: 20px auto;
+  }
+  .listproduct-format-main {
+    padding: 15px 0px;
+    color: #333;
+    font-size: 14px;
+  }
+  .listproduct-product-icon {
+    height: 60px;
+  }
+  .listproduct-remove-icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  /* Adjust the max height for scrollable area on smaller screens */
+  .listproduct-allproducts {
+    max-height: 400px;
+  }
+}
