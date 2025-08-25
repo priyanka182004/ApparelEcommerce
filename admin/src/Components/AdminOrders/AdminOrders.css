@@ -1,0 +1,211 @@
+.admin-orders-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 30px;
+  font-size: 16px;
+  color: #666;
+}
+
+.orders-table-wrapper {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+  overflow-x: auto;
+  max-height: 70vh;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.orders-table th {
+  background-color: #f5f5f5;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.orders-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.orders-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.order-id {
+  font-family: monospace;
+  color: #555;
+}
+
+.customer-name {
+  font-weight: 500;
+}
+
+.address-cell {
+  max-width: 150px;
+}
+
+.address-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.address-preview {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.address-dropdown:hover .address-preview {
+  background-color: #e0e0e0;
+}
+
+.address-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+  border: 1px solid #ddd;
+}
+
+.address-details p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.amount {
+  font-weight: 600;
+  color: #2a7f2f;
+}
+
+.payment-method {
+  text-transform: capitalize;
+}
+
+.status-cell select {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.status-cell select:hover {
+  border-color: #aaa;
+}
+
+.status-cell select.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-cell select.shipped {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-cell select.delivered {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-cell select.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Custom scrollbar styling */
+.orders-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.orders-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.orders-table-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.orders-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  .admin-orders-container {
+    padding: 10px;
+  }
+  
+  .orders-table th, 
+  .orders-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+
+.orders-table-wrapper {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 70vh;
+  display: flex;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  display: block;
+  overflow-y: auto;
+}
+
+/* Keep all other CSS exactly the same as before */

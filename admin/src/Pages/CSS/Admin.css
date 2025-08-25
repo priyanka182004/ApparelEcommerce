@@ -1,0 +1,17 @@
+.admin{
+    display: flex;
+}
+@media(max-width:800px){
+    .admin{
+        flex-direction: column;
+    }
+}
+.admin {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .admin {
+    flex-direction: column;
+  }
+}

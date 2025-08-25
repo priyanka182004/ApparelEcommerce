@@ -1,0 +1,129 @@
+.addproduct {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 50px;
+  margin: 20px 30px;
+  border-radius: 8px;
+  background: #f0f4f8; /* Soft light background */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.addproduct-itemfield {
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.addproduct-itemfield input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  padding-left: 15px;
+  border: 1px solid #d3d3d3;
+  outline: none;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.addproduct-itemfield input:focus {
+  border-color: #6079ff; /* Highlight the input on focus */
+}
+
+.addproduct-price {
+  display: flex;
+  gap: 30px;
+}
+
+.add-product-selector {
+  padding: 12px 15px;
+  width: 150px;
+  height: 50px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.add-product-selector:focus {
+  border-color: #6079ff; /* Highlight on focus */
+}
+
+.addproduct-itemfield div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.addproduct-thumbnail-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+  object-fit: contain;
+  margin: 10px 0px;
+  border: 2px solid #e1e1e1;
+  transition: transform 0.3s ease;
+}
+
+.addproduct-thumbnail-img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.addproduct-itemfield div img {
+  margin-left: -30px;
+}
+
+.addproduct-btn {
+  margin-top: 40px;
+  width: 180px;
+  height: 50px;
+  border-radius: 6px;
+  background: #6079ff;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.addproduct-btn:hover {
+  background: #4c6fdd; /* Darker shade of blue for hover effect */
+}
+
+@media (max-width: 800px) {
+  .addproduct {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .addproduct-itemfield input {
+    font-size: 15px;
+  }
+
+  .addproduct-price {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .add-product-selector {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .addproduct-thumbnail-img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .addproduct-btn {
+    width: 150px;
+  }
+}
