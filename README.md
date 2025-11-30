@@ -32,20 +32,17 @@ ApparelEcommerce/
 
 ## 📸 Project Screenshots
 
-> **Note:** Upload your screenshots inside a folder named:  
-> **`screenshots/`**
-
 ### 🏠 Home Page
-![Home](screenshots/home.png)
+![Home](screenshots/Home%20page.png)
 
 ### 👗 Women Category Page
-![Women](screenshots/women.png)
+![Women](screenshots/Catogory%20page.png)
 
 ### 🛒 Cart Page
-![Cart](screenshots/cart.png)
+![Cart](screenshots/Cart%20page.png)
 
 ### 📦 My Purchases Page
-![Purchases](screenshots/purchases.png)
+![Purchases](screenshots/Purchase%20page.png)
 
 ---
 
