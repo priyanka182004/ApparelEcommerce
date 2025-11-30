@@ -28,23 +28,19 @@ ApparelEcommerce/
 
 
 
----
-
 ## 📸 Project Screenshots
 
 ### 🏠 Home Page
-![Home](screenshots/Home%20page.png)
+![Home](Home%20page.png)
 
 ### 👗 Women Category Page
-![Women](screenshots/Category%20page.png)
+![Women](Category%20page.png)
 
 ### 🛒 Cart Page
-![Cart](screenshots/Cart%20page.png)
+![Cart](Cart%20page.png)
 
 ### 📦 My Purchases Page
-![Purchases](screenshots/Purchase%20page.png)
-
----
+![Purchases](Purchase%20page.png)
 
 ## 🛠 Tech Stack
 
